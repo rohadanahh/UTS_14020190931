@@ -1,0 +1,228 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+.side {
+  position: absolute;
+  left: 0px;
+  width: 250px;
+  height: 100%;
+  background: mistyrose;
+  transition: all .5s ease;
+}
+.side header {
+  font-size: 22px;
+  color: black;
+  line-height: 70px;
+  text-align: center;
+  background: mistyrose;
+  user-select: none;
+}
+.side ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: black;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255,255,255,.1);
+  transition: .4s;
+}
+ul li:hover a{
+  padding-left: 50px;
+}
+.side ul a i{
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  background: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+label #btn{
+  left: 250px;
+  top: 25px;
+  font-size: 35px;
+  color: navy;
+  padding: 6px 12px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .5s;
+}
+label #cancel{
+  z-index: 1111;
+  left: 195px;
+  top: 17px;
+  font-size: 30px;
+  color: navy;
+  padding: 4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .side{
+  left: -250px;
+}
+#check:checked ~ label #btn{
+  left: 40px;
+  opacity: 1;
+  pointer-events: auto;
+}
+#check:checked ~ label #cancel{
+  left: -195px;
+}
+#check:checked ~ section{
+  margin-left: 0px;
+}
+section{
+  background: url(bg.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all .5s;
+  margin-left: -250px;
+}
+
+.isi{
+  width: 100%; 
+  height: 50%;
+  float: center; 
+  text-align: center;
+  padding: 5px;
+  background-color: mistyrose;
+}
+
+.project{
+  background-color: purple; 
+  color: white; 
+  text-align: left; 
+  padding: 10px;
+}
+
+.gam{
+  width: 80%; 
+  float: left; 
+  padding: 10px;
+  color: white;
+  transition: all .5s;
+}
+
+.footer{
+  background-color: purple; 
+  color: white; 
+  text-align: right; 
+  padding: 10px; 
+  clear: both;
+}
+.tab{
+  color: white;  
+  padding-top: 50px;
+  padding-left: 15px;
+
+}
+
+.title{
+  width: 100%;
+  margin: 0 auto;
+  height: 100px;
+  position: absolute;
+  background-color: darkcyan;
+}
+
+.cara{
+  padding-top: 100px;
+}
+
+.box{
+  padding: 20px;
+  width: 500px; 
+  min-height: 100px;
+  background-color: #fff;
+  box-shadow: 0 0 5px 3px rgba(0,0,0,0.3);
+  border-radius: 15px;
+  margin-left: 500px;
+  
+}
+.header1{
+  background-color: #0b58a7;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  margin: -20px -20px 20px;
+  border-radius: 15px 15px 0 0;
+  font-size: 20px;
+}
+
+.set{
+  display: none;
+}
+
+.set.active{
+  display: block;
+}
+.set h4{
+  margin: 0 0 15px;
+  font-size: 20px;
+}
+.jawaban1{
+  position: relative;
+  margin-bottom: 10px;
+}
+.jawaban1 input{
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: pointer;
+
+}
+.jawaban1 span{
+  display: block;
+  padding: 8px 15px;
+  background-color: #bad0c9;
+  border-radius: 15px;
+  transition: all 0.3s ease-out;
+
+}
+.jawaban1:hover span{
+background-color: #9ab5ac;
+}
+
+.jawaban1 input:checked + span{
+  background-color: #f93c3c;
+}
+
+.jawaban1 input[valid]:checked + span{
+  background-color: green;
+  color: #fff;
+}
+
+.foot{
+  padding: 10px 0 0;
+  text-align: right;
+}
+.btn1{
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #0b58a7;
+  color: #fff;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+
+}

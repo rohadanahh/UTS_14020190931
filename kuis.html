@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>EDU-COVID</title>
+  <link rel="stylesheet" href="tampilan.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="custom.js"></script>
+
+</head>
+<body>
+
+  <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+  <div class="side">
+    <header>EDU-COVID</header>
+    <ul>
+      <li><a href="index.html"><i class="fas fa-qrcode"></i>Home</a></li>
+      <li><a href="pencegahan.html"><i class="fas fa-medkit"></i>Pencegahan COVID-19</a></li>
+      <li><a href="datastat.html"><i class="fas fa-chart-bar"></i>Data Dan Statistik</a></li>
+      <li><a href="kuis2.html"><i class="fas fa-laptop-code"></i>Kuis!</a></li>
+      <li><a href="kontak.html"><i class="fas fa-phone"></i>Contact</a></li>
+    </ul>
+  </div>
+  <section>
+
+    <div class="box">
+      <div class="header1">
+        <span>Score: <span id="score">0</span></span>
+        <span id="countdown">0</span>
+      </div>
+
+      <div class="body">
+        <div class="set active">
+          <h4>1. Apa saja yang tidak termasuk dari pencegahan COVID-19?</h4>
+          <div class="jawaban1">
+            <input type="radio" name="a1">
+            <span>Menggunakan Masker</span>
+          </div>
+          <div class="jawaban1">
+            <input type="radio" name="a1">
+            <span>Menjauhi Kerumunan/Keramaian</span>
+          </div>
+          <div class="jawaban1">
+            <input type="radio" name="a1" valid="valid">
+            <span>Tidak Menggunakan Masker</span>
+          </div>
+          <div class="jawaban1">
+            <input type="radio" name="a1">
+            <span>Mencuci Tangan dengan Sabun</span>
+          </div>
+        </div>
+
+        <div class="set">
+          <h4>2. Virus Corona (COVID-19) yang menyerang manusia muncul di negara ... pada awal tahun 2020.</h4>
+          <div class="jawaban1">
+            <input type="radio" name="a2" valid="valid">
+            <span>Cina</span>
+          </div>
+          <div class="jawaban1">
+            <input type="radio" name="a2">
+            <span>Italia</span>
+          </div>
+          <div class="jawaban1">
+            <input type="radio" name="a2">
+            <span>Indonesia</span>
+          </div>
+          <div class="jawaban1">
+            <input type="radio" name="a2">
+            <span>Amerika</span>
+          </div>
+        </div>
+
+        <div class="set">
+          <h4>3. Penyakit yang disebabkan oleh virus Corona disebut ….</h4>
+          <div class="jawaban1">
+            <input type="radio" name="a3" valid="valid">
+            <span>Covid</span>
+          </div>
+          <div class="jawaban1">
+            <input type="radio" name="a3">
+            <span>Pandemi</span>
+          </div>
+          <div class="jawaban1">
+            <input type="radio" name="a3">
+            <span>Vicor</span>
+          </div>
+          <div class="jawaban1">
+            <input type="radio" name="a3">
+            <span>Corona Vicor</span>
+          </div>
+        </div>
+
+        <div class="set">
+          <h4>4. Kota di Cina yang pertama kali diduga sebagai episentrum Covid-19 adalah ….</h4>
+          <div class="jawaban1">
+            <input type="radio" name="a4">
+            <span>Jiyuan</span>
+          </div>
+          <div class="jawaban1">
+            <input type="radio" name="a4">
+            <span>Shanghai</span>
+          </div>
+          <div class="jawaban1">
+            <input type="radio" name="a4">
+            <span>Beijing</span>
+          </div>
+          <div class="jawaban1">
+            <input type="radio" name="a4" valid="valid">
+            <span>Wuhan</span>
+          </div>
+        </div>
+
+        <div class="set">
+          <h4>5. Di bawah ini merupakan gejala umum dari infeksi virus Corona, kecuali …</h4>
+          <div class="jawaban1">
+            <input type="radio" name="a5">
+            <span>Sakit Tenggorokan</span>
+          </div>
+          <div class="jawaban1">
+            <input type="radio" name="a5"  valid="valid">
+            <span>Sakit Pinggang</span>
+          </div>
+          <div class="jawaban1">
+            <input type="radio" name="a5">
+            <span>Batuk</span>
+          </div>
+          <div class="jawaban1">
+            <input type="radio" name="a5">
+            <span>Demam Tinggi</span>
+          </div>
+        </div>
+
+        <div class="set active">
+          <h4>Your Total Score <span id="total">0</span> out Of 100</h4>
+        </div>
+      </div>
+      <div class="foot">
+        <span class="btn1" id="skip">Skip</span>
+      </div>
+    </div>
+  </section>
+  <script src="custom.js"></script>
+</body>
+</html>
